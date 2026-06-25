@@ -11,7 +11,7 @@ export default function App() {
   // The list of items the user has added to track
   const [trackedItems, setTrackedItems] = useState([]);
   // Which worlds/servers are selected for comparison
-  const [selectedWorlds, setSelectedWorlds] = useState(['Gilgamesh', 'Behemoth', 'Famfrit']);
+  const [selectedWorlds, setSelectedWorlds] = useState(['Sargatanas', 'Lamia', 'Brynhildr']);
   // Market data cache: { [itemId]: { [world]: marketData } }
   const [marketData, setMarketData] = useState({});
   // Which items are currently loading
