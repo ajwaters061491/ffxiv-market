@@ -1,0 +1,46 @@
+.header {
+  background: linear-gradient(180deg, #0d1120 0%, #0a0c10 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 24px 14px;
+  text-align: center;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.header-title h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+}
+
+.header-crystal {
+  color: var(--teal);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.header-sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header-line {
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold-dim), var(--teal-dim), var(--gold-dim), transparent);
+}

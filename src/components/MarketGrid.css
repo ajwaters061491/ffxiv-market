@@ -1,0 +1,177 @@
+.market-grid-wrap {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grid-scroll {
+  overflow-x: auto;
+}
+
+/* ── Empty State ── */
+.grid-empty {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.empty-crystal {
+  font-size: 32px;
+  color: var(--teal-dim);
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.empty-sub {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* ── Table ── */
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.market-table thead tr {
+  background: var(--bg-deep);
+  border-bottom: 2px solid var(--border);
+}
+
+.market-table th {
+  padding: 10px 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.market-table th.col-world {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  color: var(--gold-dim);
+  letter-spacing: 0.08em;
+}
+
+/* ── Rows ── */
+.market-row {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+.market-row:hover { background: var(--bg-row); }
+.market-row:last-child { border-bottom: none; }
+
+/* ── Item Cell ── */
+.col-item {
+  padding: 10px 14px;
+  min-width: 180px;
+}
+
+.item-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.item-name-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.12s;
+}
+.item-name-btn:hover { color: var(--gold-light); }
+
+/* ── Price Cells ── */
+.price-cell {
+  padding: 10px 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price-cell.cheapest {
+  background: rgba(62, 207, 207, 0.04);
+}
+
+.price-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+
+.price-nq {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cheapest-badge {
+  color: var(--teal);
+  font-size: 11px;
+}
+
+.price-hq {
+  font-size: 11px;
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hq-label {
+  font-size: 9px;
+  background: rgba(155, 127, 232, 0.15);
+  border: 1px solid rgba(155, 127, 232, 0.3);
+  padding: 0 4px;
+  border-radius: 2px;
+  letter-spacing: 0.05em;
+}
+
+.price-updated {
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.price-na {
+  color: var(--text-dim);
+  font-size: 18px;
+}
+
+/* ── Actions ── */
+.col-actions {
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.action-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}

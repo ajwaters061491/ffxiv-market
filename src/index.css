@@ -1,0 +1,63 @@
+/* ── Fonts & Reset ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-deep:      #0a0c10;
+  --bg-panel:     #111520;
+  --bg-card:      #161b28;
+  --bg-row:       #1a2035;
+  --border:       #2a3550;
+  --border-glow:  #4a6fa5;
+  --gold:         #c9a84c;
+  --gold-light:   #e8cc7a;
+  --gold-dim:     #7a6030;
+  --text-primary: #dde4f0;
+  --text-muted:   #7a8aaa;
+  --text-dim:     #4a5570;
+  --teal:         #3ecfcf;
+  --teal-dim:     #1a6060;
+  --red:          #e05555;
+  --red-dim:      #5a1a1a;
+  --green:        #4ecb8a;
+  --green-dim:    #1a4a30;
+  --purple:       #9b7fe8;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Subtle starfield background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.08) 0%, transparent 100%),
+    radial-gradient(1px 1px at 70% 15%, rgba(255,255,255,0.06) 0%, transparent 100%),
+    radial-gradient(1px 1px at 45% 80%, rgba(255,255,255,0.05) 0%, transparent 100%),
+    radial-gradient(1px 1px at 85% 60%, rgba(255,255,255,0.07) 0%, transparent 100%),
+    radial-gradient(1px 1px at 10% 70%, rgba(255,255,255,0.04) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-glow); }
